@@ -1,22 +1,18 @@
-function sumInput() {
+const resault = document.querySelector('.resault');
 
-    let numbers = [];
-  
-    while (true) {
-  
-      let value = prompt("Введите число", 0);
-  
-      if (value === "" || value === null || !isFinite(value)) break;
-  
-      numbers.push(+value);
-    }
-  
-    let sum = 0;
-    for (let number of numbers) {
-      sum += number;
-    }
-    return sum;
-    
+function sumInput() {
+  let items = [];
+  while (true) {
+    const number = prompt('Введите число:');
+    if (number == '') break;
+    items.push( = number);
   }
-  
-  alert( sumInput() );
+  items.sort();
+  let sum = 0;
+  for (let number of items) {
+    sum = sum + number;
+  }
+  console.log(sum);
+  resault.innerHTML = sum;
+}
+sumInput();
