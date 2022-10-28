@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/auto_calc_styles.css">
+    <title>Калькулятор расчета стоимости автомобиля</title>
 </head>
 
 <body>
+    <div class="conteiner">
     <form class="form">
-        <h1>Калькулятор стоимости</h1>
+        <h1 class="name">Калькулятор стоимости</h1>
 
         <fieldset>
             <p>Выберите марку автомобиля:</p>
@@ -88,10 +90,11 @@
         </fieldset>
 
         <div>
-            <button type="submit">Рассчитать</button>
+            <button type="submit" class="button_result">Рассчитать стоимость</button>
             <p class="result"></p>
         </div>
     </form>
+</div>
     <script src="src/scripts/auto_calculator.js"></script>
 </body>
 
