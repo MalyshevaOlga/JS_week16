@@ -1,18 +1,20 @@
-const resault = document.querySelector('.resault');
+const result = document.querySelector('.result');
+const sort = document.querySelector('.sort');
 
 function sumInput() {
-  let items = [];
+  let array = [];
   while (true) {
     const number = prompt('Введите число:');
-    if (number == '') break;
-    items.push( = number);
+    if (number == '')break;
+    array.push(+number);
   }
-  items.sort();
+  array.sort();
   let sum = 0;
-  for (let number of items) {
+  for (let number of array) {
     sum = sum + number;
   }
   console.log(sum);
-  resault.innerHTML = sum;
+  result.innerHTML = `Итого получилось ${sum}`;
+  sort.innerHTML = `Числа по возрасанию ${array.sort()}`;
 }
 sumInput();

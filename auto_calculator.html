@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
+
 <body>
-    <script src="src/scripts/auto_calculator.js"> </script>
+    <form class="form">
+        <h1>Калькулятор стоимости</h1>
+
+        <fieldset>
+            <p>Выберите марку автомобиля:</p>
+            <select class="auction">
+                <option value="500000">KIA</option>
+                <option value="700000">TOYOTA</option>
+                <option value="300000">MAZDA</option>
+                <option value="1000000">AUDI</option>
+                <option value="1100000">MERCEDES</option>
+                <option value="1500000">BENTLEY</option>
+                <option value="1300000">BMW</option>
+                <option value="750000">CHEVROLET</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Выберите тип кузова:</p>
+            <select class="model">
+                <option value="5000">Седан</option>
+                <option value="7000">Универсал</option>
+                <option value="3000">Хэтчбэк</option>
+                <option value="1000">Купе</option>
+                <option value="10000">Джип</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Типы топлива</p>
+            <div>
+                <label for="service1">
+                    <input class="inputServices" type="radio" id="service1" value="20000" />
+                    <span>Бензин</span>
+                </label>
+                <label for="service2">
+                    <input class="inputServices" type="radio" id="service2" value="60000" />
+                    <span>Дизель</span>
+                </label>
+                <label for="service2">
+                    <input class="inputServices" type="radio" id="service3" value="30000" />
+                    <span>Электрический</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>Возраст автомобиля:</p>
+            <div>
+                <label for="year1">
+                    <input class="inputYears" type="radio" id="year1" value="50000" />
+                    <span>Меньше 3-х лет</span>
+                </label>
+                <label for="year2">
+                    <input class="inputYears" type="radio" id="year2" value="30000" />
+                    <span>от 3 до 5 лет</span>
+                </label>
+                <label for="year3">
+                    <input class="inputYears" type="radio" id="year3" value="10000" />
+                    <span>От 5 до 10 лет</span>
+                </label>
+                <label for="year4">
+                    <input class="inputYears" type="radio" id="year4" value="5000" />
+                    <span>больше 10 лет</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>Получатель:</p>
+            <label for="destination1">
+                <input class="destination" type="checkbox" id="destination1" value="0" />
+                <span>Физическое лицо</span>
+            </label>
+            <label for="destination2">
+                <input class="destination" type="checkbox" id="destination2" value="10000" />
+                <span>Юридическое лицо</span>
+            </label>
+        </fieldset>
+
+        <div>
+            <button type="submit">Рассчитать</button>
+            <p class="result"></p>
+        </div>
+    </form>
+    <script src="src/scripts/auto_calculator.js"></script>
 </body>
+
 </html>
