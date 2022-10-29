@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/numbers.css">
     <title>Массивы</title>
 </head>
 
 <body>
     <div class="conteiner">
-        <h1>Массивы чисел</h1>
-        <h2>Введите число (для ввода используйте Enter):</h2>
+        <h1 class="h1">Массивы чисел</h1>
+        <h2 class="h2">Введите число (для ввода используйте Enter):</h2>
         <input class="array" />
-        <button type="button" class="result">Готово!</button>
+        <div class="buttons1">
+            <button type="button" class="result">Готово!</button>
+        </div>
         <p class="errorMessage"></p>
         <p class="sort"></p>
         <p class="total"></p>
-        <button type="button" class="reset" onclick="resetArray();">Очистить</button>
+        <div class="buttons2">
+            <button type="button" class="reset" onclick="resetArray();">Очистить</button>
+        </div>
     </div>
 
 
